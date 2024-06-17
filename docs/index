@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Valorant</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ff4655;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .presentation {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .presentation p {
+            font-size: 1.2em;
+        }
+
+        .footer {
+            background-color: #ff4655;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenue sur le site Valorant</h1>
+    </header>
+
+    <div class="container">
+        <div class="presentation">
+            <p>Bienvenue, dans le site qui vous permettra de découvrir Valorant, que ce soit personnages, map, astuces ou autre.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Valorant Fan Site. Tous droits réservés.</p>
+    </div>
+</body>
+
+</html>

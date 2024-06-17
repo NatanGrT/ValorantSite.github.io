@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Valorant</title>
+    <link rel="icon" href="valorant.png" type="image/png"> <!-- Ajout de la balise pour le favicon -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ff4655;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px); /* Adjusting for header and footer height */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .presentation {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+        }
+
+        .presentation h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.5em;
+        }
+
+        .presentation p {
+            font-size: 1.2em;
+        }
+
+        .footer {
+            background-color: #ff4655;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="valorant.png" alt="Valorant Logo">
+        <nav>
+            <a href="personnages.html" target="_blank">
+                <span>Personnages</span>
+            </a>
+            <a href="map.html" target="_blank">
+                <span>Cartes</span>
+            </a>
+            <a href="astuce.html" target="_blank">
+                <span>astuces</span>
+            </a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="presentation">
+            <h2>Accueil</h2>
+            <p>Bienvenue, dans le site qui vous permettra de découvrir Valorant, que ce soit personnages, map, astuces ou autre.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Valorant Fan Site. Tous droits réservés.</p>
+    </div>
+</body>
+
+</html>

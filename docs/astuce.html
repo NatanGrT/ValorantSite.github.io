@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astuces Valorant</title>
-    <link rel="icon" href="valorant.png" type="image/png"> <!-- Ajout de la balise pour le favicon -->
+    <title>Astuces</title>
+    <link rel="icon" href="valorant.png" type="image/png">
     <style>
         body {
             margin: 0;
@@ -18,7 +18,7 @@
             background-color: #ff4655;
             padding: 10px 20px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
         }
 
@@ -28,34 +28,44 @@
 
         nav {
             display: flex;
-            gap: 20px;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
             font-size: 1.2em;
+            padding: 10px 20px;
         }
 
         .container {
             padding: 20px;
         }
 
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
         .tips-section {
             background-color: #1a1a1a;
             padding: 20px;
             border-radius: 10px;
-            margin-bottom: 20px;
+            text-align: center;
+            transition: transform 0.3s;
         }
 
         .tips-section h2 {
-            margin-top: 0;
-            font-size: 2em;
             color: #ff4655;
+            font-size: 1.5em;
         }
 
         .tips-section p {
-            font-size: 1.2em;
+            color: #fff;
+        }
+
+        .tips-section:hover {
+            transform: scale(1.05);
         }
 
         .footer {
@@ -82,46 +92,44 @@
     </header>
 
     <div class="container">
-        <div class="tips-section">
-            <h2>Astuces 1</h2>
-            <p></p>
-        </div>
-        <div class="tips-section">
-            <h2>Astuces 2</h2>
-            <p></p>
-        </div>
-        <div class="tips-section">
-            <h2>Astuces 3</h2>
-            <p></p>
-        </div>
-        <div class="tips-section">
-            <h2>Astuces 4</h2>
-            <p></p>
-        </div>
-        <div class="tips-section">
-            <h2>Astuces 5</h2>
-            <p></p>
-        </div>
-        <div class="tips-section">
-            <h2>Astuces 6</h2>
-            <p></p>
-        </div>
-        <div class="tips-section">
-            <h2>Astuces 7</h2>
-            <p></p>
-        </div>
-        <div class="tips-section">
-            <h2>Astuces 8</h2>
-            <p></p>
-        </div>
-        <div class="tips-section">
-            <h2>Astuces 3</h2>
-            <p></p>
+        <div class="tips-grid">
+            <div class="tips-section">
+                <h2>Astuces 1</h2>
+                <p>Texte de l'astuce 1 en blanc.</p>
+            </div>
+            <div class="tips-section">
+                <h2>Astuces 2</h2>
+                <p>Texte de l'astuce 2 en blanc.</p>
+            </div>
+            <div class="tips-section">
+                <h2>Astuces 3</h2>
+                <p>Texte de l'astuce 3 en blanc.</p>
+            </div>
+            <div class="tips-section">
+                <h2>Astuces 4</h2>
+                <p>Texte de l'astuce 4 en blanc.</p>
+            </div>
+            <div class="tips-section">
+                <h2>Astuces 5</h2>
+                <p>Texte de l'astuce 5 en blanc.</p>
+            </div>
+            <div class="tips-section">
+                <h2>Astuces 6</h2>
+                <p>Texte de l'astuce 6 en blanc.</p>
+            </div>
+            <div class="tips-section">
+                <h2>Astuces 7</h2>
+                <p>Texte de l'astuce 7 en blanc.</p>
+            </div>
+            <div class="tips-section">
+                <h2>Astuces 8</h2>
+                <p>Texte de l'astuce 8 en blanc.</p>
+            </div>
         </div>
     </div>
 
     <div class="footer">
-       
+        <!-- Contenu du pied de page -->
     </div>
 </body>
 

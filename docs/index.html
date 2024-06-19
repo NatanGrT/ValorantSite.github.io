@@ -10,9 +10,6 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-image: url('image.png'); /* Image de fond */
-            background-size: cover;
-            background-position: center;
             color: #fff;
         }
 
@@ -39,6 +36,32 @@
             font-size: 1.2em;
         }
 
+        .language-selector {
+        display: flex;
+        align-items: center;
+        }
+
+        .language-selector select {
+            padding: 8px;
+            font-size: 1em;
+            border: none;
+            background-color: #ff4655;
+            color: #fff;
+        }
+
+        .language-selector button {
+            padding: 8px 15px;
+            background-color: #ff4655;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .language-selector button:hover {
+            background-color: #000000;
+        s}
+
         .container {
             display: flex;
             justify-content: center;
@@ -46,6 +69,9 @@
             min-height: calc(100vh - 80px); /* Adjusting for header and footer height */
             padding: 20px;
             text-align: center;
+            background-image: url('image.png'); /* Image de fond */
+            background-size: cover;
+            background-position: center;
         }
 
         .presentation {
@@ -62,6 +88,46 @@
 
         .presentation p {
             font-size: 1.2em;
+        }
+
+        .falcon-section {
+            background: linear-gradient(135deg, #ff4655, #1a1a1a);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .falcon-title {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            background: linear-gradient(135deg, #000000, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        .falcon-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .falcon-item {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .falcon-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .falcon-item p {
+            margin-top: 10px;
+            font-size: 1em;
         }
 
         .footer {
@@ -83,6 +149,17 @@
             <a href="map.html">Cartes</a>
             <a href="astuce.html">Astuces</a>
         </nav>
+        <div class="language-selector">
+            <select id="languageSelect">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="it">Italiano</option>
+                <option value="ru">Русский</option>
+                <option value="zh">中文</option>
+            </select>
+            <button onclick="redirectToSelected()">Aller</button>
+        </div>
     </header>
 
     <div class="container">
@@ -92,9 +169,68 @@
         </div>
     </div>
 
-    <div class="footer">
-      
+    <div class="falcon-section">
+        <h2 class="falcon-title">THE FALCON FIVE</h2>
+        <div class="falcon-grid">
+            <div class="falcon-item">
+                <img src="jett.png" alt="Image 1">
+                <p>PoseidonLeDieux</p>
+            </div>
+            <div class="falcon-item">
+                <img src="omen.png" alt="Image 2">
+                <p>Fruitix</p>
+            </div>
+            <div class="falcon-item">
+                <img src="neon.png" alt="Image 3">
+                <p>Fuzing</p>
+            </div>
+            <div class="falcon-item">
+                <img src="clove.png" alt="Image 4">
+                <p>Henrisson05</p>
+            </div>
+            <div class="falcon-item">
+                <img src="chamber.png" alt="Image 5">
+                <p>Kyyneda</p>
+            </div>
+        </div>
     </div>
+
+    <div class="footer">
+        <p></p>
+    </div>
+    <script>
+        function redirectToSelected() {
+            var select = document.getElementById("languageSelect");
+            var value = select.options[select.selectedIndex].value;
+            var url;
+            
+            switch (value) {
+                case "fr":
+                    url = "file:///C:/Users/natan/Valorant/ValorantSite.github.io/docs/index.html";
+                    break;
+                case "en":
+                    url = "file:///C:/Users/natan/Valorant/ValorantSite.github.io/docs/index.html";
+                    break;
+                case "es":
+                    url = "file:///C:/Users/natan/Valorant/ValorantSite.github.io/docs/index.html";
+                    break;
+                case "it":
+                    url = "file:///C:/Users/natan/Valorant/ValorantSite.github.io/docs/index.html";
+                    break;
+                case "ru":
+                    url = "file:///C:/Users/natan/Valorant/ValorantSite.github.io/docs/index.html";
+                    break;
+                case "zh":
+                    url = "file:///C:/Users/natan/Valorant/ValorantSite.github.io/docs/index.html";
+                    break;
+                default:
+                    url = "file:///C:/Users/natan/Valorant/ValorantSite.github.io/docs/index.html"; // Site par défaut pour toute autre langue
+                    break;
+            }
+            
+            window.location.href = url;
+        }
+    </script>
 </body>
 
 </html>

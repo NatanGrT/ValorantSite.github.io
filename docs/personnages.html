@@ -54,21 +54,32 @@
             border-radius: 10px;
             width: 300px;
             text-align: center;
+            transition: transform 0.3s; /* Pour un effet de transition lors du survol */
         }
 
         .character img {
             width: 100%;
             border-radius: 10px;
+            transition: transform 0.3s; /* Pour un effet de transition lors du survol */
+        }
+
+        .character img:hover {
+            transform: scale(1.1); /* Effet de grossissement */
         }
 
         .character h3 {
             margin: 10px 0;
             font-size: 1.5em;
-            color: blue;
+            color: #fff; /* Couleur initiale en blanc */
         }
 
-        .character h3:visited {
-            color: violet;
+        .character h3 a {
+            color: inherit; /* Hérite de la couleur du parent (blanc) */
+            text-decoration: none;
+        }
+
+        .character h3 a:visited {
+            color: violet; /* Couleur après visite en violet */
         }
 
         .ability {
@@ -130,6 +141,12 @@
                 <h3><a href="chamber.html">Chamber</a></h3>
             </div>
             <div class="character">
+                <a href="clove.html">
+                    <img src="clove.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="clove.html">Clove</a></h3>
+            </div>
+            <div class="character">
                 <a href="cypher.html">
                     <img src="cypher.png" alt="Nom du Personnage">
                 </a>
@@ -158,6 +175,12 @@
                     <img src="harbor.png" alt="Nom du Personnage">
                 </a>
                 <h3><a href="harbor.html">Harbor</a></h3>
+            </div>
+            <div class="character">
+                <a href="iso.html">
+                    <img src="iso.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="iso.html">Iso</a></h3>
             </div>
             <div class="character">
                 <a href="jett.html">

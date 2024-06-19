@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartes de Valorant</title>
+    <title>Personnages de Valorant</title>
     <link rel="icon" href="valorant.png" type="image/png"> <!-- Ajout de la balise pour le favicon -->
     <style>
         body {
@@ -41,36 +41,52 @@
             padding: 20px;
         }
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        .characters {
+            display: flex;
+            flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
         }
 
-        .card {
+        .character {
             background-color: #1a1a1a;
             padding: 20px;
             border-radius: 10px;
+            width: 300px;
             text-align: center;
+            transition: transform 0.3s; /* Pour un effet de transition lors du survol */
         }
 
-        .card img {
+        .character img {
             width: 100%;
             border-radius: 10px;
-            margin-bottom: 10px;
+            transition: transform 0.3s; /* Pour un effet de transition lors du survol */
         }
 
-        .card h3 {
+        .character img:hover {
+            transform: scale(1.1); /* Effet de grossissement */
+        }
+
+        .character h3 {
             margin: 10px 0;
             font-size: 1.5em;
+            color: #fff; /* Couleur initiale en blanc */
         }
 
-        .particularity {
+        .character h3 a {
+            color: inherit; /* Hérite de la couleur du parent (blanc) */
+            text-decoration: none;
+        }
+
+        .character h3 a:visited {
+            color: violet; /* Couleur après visite en violet */
+        }
+
+        .ability {
             margin: 10px 0;
         }
 
-        .particularity p {
+        .ability p {
             margin: 5px 0;
         }
 
@@ -92,121 +108,85 @@
         </a>
         <nav>
             <a href="index.html">Accueil</a>
-            <a href="personnages.html">Personnages</a>
+            <a href="personnages.html">Cartes</a>
             <a href="astuce.html">Astuces</a>
         </nav>
     </header>
 
     <div class="container">
-        <div class="cards">
-            <!-- Exemple de carte 1 -->
-            <div class="card">
-                <img src="abyss.png" alt="Image de Ascent">
-                <img src="abyss carte.png" alt="Carte Réelle de Ascent">
-                <h3>Abyss</h3>
-                <div class="particularity">
-                    <h4>Particularité</h4>
-                    <p></p>
-                </div>
+        <div class="characters">
+            <!-- Example of a character block, repeat this block for each character -->
+            <div class="character">
+                <a href="abyss.html">
+                    <img src="abyss.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="abyss.html">Abyss</a></h3>
             </div>
-            <!-- Exemple de carte 2 -->
-            <div class="card">
-                <img src="ascent.png" alt="Image de Bind">
-                <img src="ascent carte.png" alt="Carte Réelle de Bind">
-                <h3>Ascent</h3>
-                <div class="particularity">
-                    <h4>Particularité</h4>
-                    <p></p>
-                </div>
+            <div class="character">
+                <a href="ascent.html">
+                    <img src="ascent.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="ascent.html">Ascent</a></h3>
             </div>
-            <!-- Exemple de carte 3 -->
-            <div class="card">
-                <img src="bind.png" alt="Image de Haven">
-                <img src="bind carte.png" alt="Carte Réelle de Haven">
-                <h3>Bind</h3>
-                <div class="particularity">
-                    <h4>Particularité</h4>
-                    <p></p>
-                </div>
+            <div class="character">
+                <a href="bind.html">
+                    <img src="bind.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="bind.html">Bind</a></h3>
             </div>
-            <!-- Répétez ce bloc pour les 9 autres cartes -->
-            <div class="card">
-                <img src="breeze.png" alt="Image de Haven">
-                <img src="breeze carte.png" alt="Carte Réelle de Haven">
-                <h3>Breeze</h3>
-                <div class="particularity">
-                    <h4>Particularité</h4>
-                    <p></p>
-                </div>
+            <div class="character">
+                <a href="breeze.html">
+                    <img src="breeze.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="breeze.html">Breeze</a></h3>
             </div>
-            <div class="card">
-                <img src="fracture.png" alt="Image de Haven">
-                <img src="fracture carte.png" alt="Carte Réelle de Haven">
-                <h3>Fracture</h3>
-                <div class="particularity">
-                    <h4>Particularité</h4>
-                    <p></p>
-                </div>
+            <div class="character">
+                <a href="fracture.html">
+                    <img src="fracture.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="fracture.html">Fracture</a></h3>
             </div>
-            <div class="card">
-                <img src="haven.png" alt="Image de Haven">
-                <img src="haven carte.png" alt="Carte Réelle de Haven">
-                <h3>Haven</h3>
-                <div class="particularity">
-                    <h4>Particularité</h4>
-                    <p></p>
-                </div>
+            <div class="character">
+                <a href="haven.html">
+                    <img src="haven.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="haven.html">Haven</a></h3>
             </div>
-            <div class="card">
-                <img src="icebox.png" alt="Image de Haven">
-                <img src="icebox carte.png" alt="Carte Réelle de Haven">
-                <h3>Icebox</h3>
-                <div class="particularity">
-                    <h4>Particularité</h4>
-                    <p></p>
-                </div>
+            <div class="character">
+                <a href="icebox.html">
+                    <img src="icebox.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="icebox.html">Icebox</a></h3>
             </div>
-            <div class="card">
-                <img src="lotus.png" alt="Image de Haven">
-                <img src="lotus carte.png" alt="Carte Réelle de Haven">
-                <h3>Lotus</h3>
-                <div class="particularity">
-                    <h4>Particularité</h4>
-                    <p></p>
-                </div>
+            <div class="character">
+                <a href="lotus.html">
+                    <img src="lotus.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="lotus.html">Lotus</a></h3>
             </div>
-            <div class="card">
-                <img src="pearl.png" alt="Image de Haven">
-                <img src="pearl carte.png" alt="Carte Réelle de Haven">
-                <h3>Pearl</h3>
-                <div class="particularity">
-                    <h4>Particularité</h4>
-                    <p></p>
-                </div>
+            <div class="character">
+                <a href="pearl.html">
+                    <img src="pearl.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="pearl.html">Pearl</a></h3>
             </div>
-            <div class="card">
-                <img src="split.png" alt="Image de Haven">
-                <img src="split carte.png" alt="Carte Réelle de Haven">
-                <h3>Split</h3>
-                <div class="particularity">
-                    <h4>Particularité</h4>
-                    <p></p>
-                </div>
+            <div class="character">
+                <a href="split.html">
+                    <img src="split.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="split.html">Split</a></h3>
             </div>
-            <div class="card">
-                <img src="sunset.png" alt="Image de Haven">
-                <img src="sunset carte.png" alt="Carte Réelle de Haven">
-                <h3>Sunset</h3>
-                <div class="particularity">
-                    <h4>Particularité</h4>
-                    <p></p>
-                </div>
+            <div class="character">
+                <a href="sunset.html">
+                    <img src="sunset.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="sunset.html">Sunset</a></h3>
             </div>
         </div>
     </div>
 
     <div class="footer">
-        
+        <!-- Contenu du pied de page -->
     </div>
 </body>
 

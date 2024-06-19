@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartes de Valorant</title>
+    <link rel="icon" href="assets/valorant.png" type="image/png"> <!-- Ajout de la balise pour le favicon -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ff4655;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center; /* Centrer les éléments */
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px; /* Ajout de l'espace autour des liens */
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .characters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .character {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s; /* Pour un effet de transition lors du survol */
+        }
+
+        .character img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s; /* Pour un effet de transition lors du survol */
+        }
+
+        .character img:hover {
+            transform: scale(1.1); /* Effet de grossissement */
+        }
+
+        .character h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #fff; /* Couleur initiale en blanc */
+        }
+
+        .character h3 a {
+            color: inherit; /* Hérite de la couleur du parent (blanc) */
+            text-decoration: none;
+        }
+
+        .character h3 a:visited {
+            color: violet; /* Couleur après visite en violet */
+        }
+
+        .ability {
+            margin: 10px 0;
+        }
+
+        .ability p {
+            margin: 5px 0;
+        }
+
+        .footer {
+            background-color: #ff4655;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/valorant.png" alt="Valorant Logo">
+        </a>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="personnages.html">Personnages</a>
+            <a href="astuce.html">Astuces</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="characters">
+            <!-- Example of a character block, repeat this block for each character -->
+            <div class="character">
+                <a href="maps/abyss.html">
+                    <img src="assets/abyss.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="maps/abyss.html">Abyss</a></h3>
+            </div>
+            <div class="character">
+                <a href="maps/ascent.html">
+                    <img src="assets/ascent.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="maps/ascent.html">Ascent</a></h3>
+            </div>
+            <div class="character">
+                <a href="maps/bind.html">
+                    <img src="assets/bind.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="maps/bind.html">Bind</a></h3>
+            </div>
+            <div class="character">
+                <a href="maps/breeze.html">
+                    <img src="assets/breeze.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="maps/breeze.html">Breeze</a></h3>
+            </div>
+            <div class="character">
+                <a href="maps/fracture.html">
+                    <img src="assets/fracture.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="maps/fracture.html">Fracture</a></h3>
+            </div>
+            <div class="character">
+                <a href="maps/haven.html">
+                    <img src="assets/haven.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="maps/haven.html">Haven</a></h3>
+            </div>
+            <div class="character">
+                <a href="maps/icebox.html">
+                    <img src="assets/icebox.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="maps/icebox.html">Icebox</a></h3>
+            </div>
+            <div class="character">
+                <a href="maps/lotus.html">
+                    <img src="assets/lotus.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="maps/lotus.html">Lotus</a></h3>
+            </div>
+            <div class="character">
+                <a href="maps/pearl.html">
+                    <img src="assets/pearl.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="maps/pearl.html">Pearl</a></h3>
+            </div>
+            <div class="character">
+                <a href="maps/split.html">
+                    <img src="assets/split.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="maps/split.html">Split</a></h3>
+            </div>
+            <div class="character">
+                <a href="maps/sunset.html">
+                    <img src="assets/sunset.png" alt="Nom du Personnage">
+                </a>
+                <h3><a href="maps/sunset.html">Sunset</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <!-- Contenu du pied de page -->
+    </div>
+</body>
+
+</html>

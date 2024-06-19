@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raze</title>
+    <link rel="icon" href="../assets/valorant.png" type="image/png"> <!-- Ajout de la balise pour le favicon -->
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        overflow: hidden; /* Empêche le défilement */
+    }
+
+    .top-bar, .bottom-bar {
+        width: 100%;
+        height: 50px;
+        background-color: #ff4655;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centre les éléments horizontalement */
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .back-arrow {
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+        position: absolute;
+        left: 20px; /* Positionne la flèche à gauche */
+    }
+
+    .valorant-symbol {
+        width: 40px;
+        height: 40px;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 100px);
+        padding: 20px;
+    }
+
+    .character-image {
+        width: 300px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    .text-content {
+        max-width: 600px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="../personnages.html" class="back-arrow">&#8592;</a>
+        <img src="../assets/valorant.png" alt="Symbole Valorant" class="valorant-symbol">
+    </div>
+    
+    <div class="content">
+        <img src="../assets/raze.png" alt="Personnage Valorant" class="character-image">
+        <div class="text-content">
+            <h1>Raze</h1>
+            <div class="ability">
+                <h4>Capacité 1</h4>
+                <p>Description de la capacité 1</p>
+            </div>
+            <div class="ability">
+                <h4>Capacité 2</h4>
+                <p>Description de la capacité 2</p>
+            </div>
+            <div class="ability">
+                <h4>Capacité 3</h4>
+                <p>Description de la capacité 3</p>
+            </div>
+            <div class="ability">
+                <h4>Capacité Ultime</h4>
+                <p>Description de la capacité Ultime</p>
+            </div>
+            <div class="ability">
+                <h4>Astuces</h4>
+                <p>Conseils et astuces pour utiliser ce personnage</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bottom-bar"></div>
+</body>
+</html>

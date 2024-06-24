@@ -4,64 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pearl</title>
-    <link rel="icon" href="../assets/valorant.png" type="image/png"> <!-- Ajout de la balise pour le favicon -->
+    <link rel="stylesheet" href="../css/maps.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #1a020b;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            overflow: hidden; /* Empêche le défilement */
-        }
-
-        .top-bar, .bottom-bar {
-            width: 100%;
-            height: 50px;
-            background-color: #ff4655;
-            display: flex;
-            align-items: center;
-            justify-content: center; /* Centre les éléments horizontalement */
-            padding: 0 20px;
-            position: relative;
-        }
-
-        .back-arrow {
-            color: #fff;
-            text-decoration: none;
-            font-size: 24px;
-            position: absolute;
-            left: 20px; /* Positionne la flèche à gauche */
-        }
-
-        .valorant-symbol {
-            width: 40px;
-            height: 40px;
-        }
-
         .content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: calc(100vh - 100px);
-            padding: 20px;
-        }
-
-        .images-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-right: 20px;
-        }
-
-        .character-image {
-            width: 300px;
-            height: auto;
-        }
-
-        .text-content {
-            max-width: 600px;
+            background-image: url('../assets/pearl.png');
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
@@ -70,25 +18,34 @@
         <a href="../map.html" class="back-arrow">&#8592;</a>
         <img src="../assets/valorant.png" alt="Symbole Valorant" class="valorant-symbol">
     </div>
-    
     <div class="content">
-        <div class="images-container">
-            <img src="../assets/pearl.png" alt="Personnage Valorant" class="character-image">
-            <img src="../assets/pearl_map.png" alt="Personnage Valorant" class="character-image"> <!-- Deuxième image ajoutée -->
-        </div>
-        <div class="text-content">
+        <div class="title">
             <h1>Pearl</h1>
-            <div class="ability">
-                <h4>Descriptif</h4>
-                <p>Description de la carte</p>
+        </div>
+        <div class="block">
+            <div class="image">
+                <img src="../assets/pearl_map.png" alt="Carte Valorant">
             </div>
-            <div class="ability">
-                <h4>Astuces</h4>
-                <p>Plusieurs astuces</p>
+            <div class="text">
+                <p>Abyss est la première carte de VALORANT à ne pas avoir de frontières
+                     extérieures et une chute mortelle au milieu, ce qui permet aux jou
+                     eurs de tomber de la carte dans ces zones. Certaines parties de la
+                      carte ne sont accessibles qu'en sautant par-dessus ces chutes ; l
+                      es positions Danger et Secret sont des corniches étroites situées
+                       sur les frontières extérieures de la carte, utilisées comme racc
+                       ourcis de saut. Au milieu, les joueurs ne peuvent accéder à Catw
+                       alk directement depuis Top ou Library qu'en sautant par-dessus l
+                       a chute mortelle de Mid vers un ascendeur.
+                    <br><br>
+                    Les deux entrées de Vent sont bloquées par des portes qui absorbent
+                     les dégâts et les tirs tant qu'elles sont intactes. Les portes ont
+                      120 HP avec des indicateurs colorés pour montrer la quantité de v
+                      ie restante (commence en bleu, puis devient jaune et ensuite roug
+                      e à mesure qu'elles subissent plus de dégâts). Une fois détruites
+                      , le passage restera dégagé pour le reste de la manche.</p>
             </div>
         </div>
     </div>
-    
     <div class="bottom-bar"></div>
 </body>
 </html>
